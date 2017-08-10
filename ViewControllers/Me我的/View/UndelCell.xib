@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UndelCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="298" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jsb-lx-fTR">
+                        <rect key="frame" x="20" y="29.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LVB-3q-oln"/>
+                            <constraint firstAttribute="height" constant="20" id="qG6-Xn-xEK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBQ-7K-TnS">
+                        <rect key="frame" x="55" y="31.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDC-0f-8tT">
+                        <rect key="frame" x="235" y="24" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WDC-0f-8tT" secondAttribute="trailing" constant="14" id="CWT-Fr-mjs"/>
+                    <constraint firstItem="Jsb-lx-fTR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FaK-ha-hHS"/>
+                    <constraint firstItem="Jsb-lx-fTR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="L61-0r-Qby"/>
+                    <constraint firstItem="WDC-0f-8tT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xu3-B9-c3H"/>
+                    <constraint firstItem="JBQ-7K-TnS" firstAttribute="leading" secondItem="Jsb-lx-fTR" secondAttribute="trailing" constant="15" id="cs6-sx-1w7"/>
+                    <constraint firstItem="JBQ-7K-TnS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="d4o-yh-n0F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="Jsb-lx-fTR" id="o6a-Oc-ZZ2"/>
+                <outlet property="isSwitch" destination="WDC-0f-8tT" id="p6Z-45-FVI"/>
+                <outlet property="title" destination="JBQ-7K-TnS" id="K05-Rb-QJE"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="177"/>
+        </tableViewCell>
+    </objects>
+</document>
